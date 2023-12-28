@@ -5,7 +5,7 @@ import Logo from "../assets/images/Logo.png";
 const Navbar = () => {
   return (
     <>
-      <div className="container shadow-lg">
+      <div className="px-4 shadow-sm">
         <div className="flex justify-between items-center py-2">
           <div>
             <img src={Logo} className="w-20" alt="Fitness App" />
