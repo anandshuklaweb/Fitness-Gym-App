@@ -1,13 +1,12 @@
 import React from "react";
-import { Box, Stack, Typography } from "@mui/material";
 import Logo from "../assets/images/Logo.png";
 
 const Footer = () => (
   <>
-    <section id="footer">
-      <div className="container-fluid">
-        <img src={Logo} alt="logo" className="logo" />
-        <h2>Made with ❤️ by Anand Shukla</h2>
+    <section className="py-12 bg-teal-400 text-center">
+      <div className="flex flex-col justify-center items-center">
+        <img src={Logo} alt="logo" className="w-16 pb-2" />
+        <p className="text-gray-700">Made with ❤️ by Anand Shukla</p>
       </div>
     </section>
   </>
