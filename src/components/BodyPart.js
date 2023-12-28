@@ -4,15 +4,15 @@ import Icon from "../assets/icons/gym.png";
 const BodyPart = ({ item, setBodyPart, bodyPart }) => (
   <>
     <div
-      class="card bodyPart-card"
+      className="card bodyPart-card"
       onClick={() => {
         setBodyPart(item);
         window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
       }}
     >
-      <div class="card-body">
-        <img src={Icon} alt="dumbbell" class="bodypart-img card-img-top" />
-        <h2 class="card-text bodypart-text">{item}</h2>
+      <div className="card-body">
+        <img src={Icon} alt="dumbbell" className="bodypart-img card-img-top" />
+        <h2 className="card-text bodypart-text">{item}</h2>
       </div>
     </div>
     {/* 

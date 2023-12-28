@@ -21,18 +21,18 @@ const ExerciseVideos = ({ exerciseVideos, name }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <div class="card text-center">
-                    <div class="card-body">
+                  <div className="card text-center">
+                    <div className="card-body">
                       <img
                         src={item.video.thumbnails[0].url}
                         alt={item.video.title}
                       />
                     </div>
-                    <div class="card-footer text-muted">
-                      <a href="#" class="btn btn-info">
+                    <div className="card-footer text-muted">
+                      <a href="#" className="btn btn-info">
                         {item.video.title}
                       </a>
-                      <a href="#" class="btn btn-danger">
+                      <a href="#" className="btn btn-danger">
                         {item.video.channelName}
                       </a>
                     </div>

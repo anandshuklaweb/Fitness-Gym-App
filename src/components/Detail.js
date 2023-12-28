@@ -47,12 +47,12 @@ const Detail = ({ exerciseDetail }) => {
               </p>
 
               {extraDetail?.map((item) => (
-                <div class="media" key={item.name}>
+                <div className="media" key={item.name}>
                   <div className="img">
-                    <img src={item.icon} alt={bodyPart} class="mr-3" />
+                    <img src={item.icon} alt={bodyPart} className="mr-3" />
                   </div>
-                  <div class="media-body">
-                    <h5 class="mt-0">{item.name}</h5>
+                  <div className="media-body">
+                    <h5 className="mt-0">{item.name}</h5>
                   </div>
                 </div>
               ))}

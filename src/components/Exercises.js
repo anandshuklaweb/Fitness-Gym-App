@@ -51,19 +51,14 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
   return (
     <>
       <section id="exercise">
-        <div className="container-fluid">
+        <div className="mb-16">
           <Box id="exercises" sx={{ mt: { lg: "109px" } }} mt="50px" p="20px">
-            <Stack
-              direction="row"
-              sx={{ gap: { lg: "50px", xs: "50px" } }}
-              flexWrap="wrap"
-              justifyContent="center"
-            >
+            <div className="flex gap-12 flex-wrap justify-center">
               {currentExercises.map((exercise, idx) => (
                 <ExerciseCard key={idx} exercise={exercise} />
               ))}
-            </Stack>
-            <Stack sx={{ mt: { lg: "114px", xs: "70px" } }} alignItems="center">
+            </div>
+            <Stack sx={{ mt: { lg: "40px", xs: "70px" } }} alignItems="center">
               {exercises.length > 9 && (
                 <Pagination
                   color="standard"
