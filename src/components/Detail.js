@@ -46,8 +46,8 @@ const Detail = ({ exerciseDetail }) => {
                 improve your <br /> mood and gain energy.
               </p>
 
-              {extraDetail?.map((item) => (
-                <div className="media" key={item.name}>
+              {extraDetail?.map((item, index) => (
+                <div className="media" key={index}>
                   <div className="img">
                     <img src={item.icon} alt={bodyPart} className="mr-3" />
                   </div>
