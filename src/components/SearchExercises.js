@@ -45,7 +45,7 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
 
   return (
     <>
-      <section className="py-4">
+      <section className="py-4" id="search-exercise">
         <div className="text-center py-2 md:py-4">
           <h2 className="px-2 font-semibold text-2xl md:text-6xl">
             Awesome Exercises You <br /> Should Know
@@ -56,14 +56,14 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
             <div className=" py-4">
               <input
                 type="text"
-                className="outline-none p-2 rounded-l-md border w-3/6 min-h-12"
+                className="outline-none p-2 rounded-l-md border w-3/6 max-h-12 h-12"
                 value={search}
                 onChange={(e) => setSearch(e.target.value.toLowerCase())}
                 placeholder="Search Exercises"
               />
               <button
                 type="submit"
-                className="bg-teal-500 text-white min-h-12 px-4 rounded-r-md"
+                className="bg-teal-500 text-white h-12 max-h-12 px-4 rounded-r-md"
                 onClick={handleSearch}
               >
                 Search
