@@ -1,6 +1,6 @@
 import React from "react";
 import { Stack } from "@mui/material";
-// import { InfinitySpin } from "react-loader-spinner";
+import { Bars } from "react-loader-spinner";
 
 const Loader = () => (
   <Stack
@@ -8,8 +8,9 @@ const Loader = () => (
     justifyContent="center"
     alignItems="center"
     width="100%"
+    className="w-6"
   >
-    {/* <InfinitySpin color="grey" /> */}
+    <Bars color="grey" />
   </Stack>
 );
 
