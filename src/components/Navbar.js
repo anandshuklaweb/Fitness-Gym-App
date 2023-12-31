@@ -8,7 +8,9 @@ const Navbar = () => {
       <div className="px-4 shadow-sm">
         <div className="flex justify-between items-center py-2">
           <div>
-            <img src={Logo} className="w-20" alt="Fitness App" />
+            <Link to="/">
+              <img src={Logo} className="w-20" alt="Fitness App" />
+            </Link>
           </div>
           <div>
             <ul className="flex gap-8">

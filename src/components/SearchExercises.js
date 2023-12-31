@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 
-import { Box } from "@mui/material";
 import { exerciseOptions, fetchData } from "../utils/fetchData";
 import HorizontalScrollbar from "./HorizontalScrollbar";
 
@@ -72,15 +71,15 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         </div>
       </section>
 
-      <div className="container-fluid body-parts-scroll">
-        <Box sx={{ position: "relative", width: "100%", p: "20px" }}>
+      <div className=" body-parts-scroll">
+        <div className="relative w-full py-5 px-3" >
           <HorizontalScrollbar
             data={bodyParts}
             bodyParts
             setBodyPart={setBodyPart}
             bodyPart={bodyPart}
           />
-        </Box>
+        </div>
       </div>
     </>
   );
