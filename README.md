@@ -1,6 +1,6 @@
 # Fitness App 
 
-Fitness App Using React.js, Bootstrap, Rapid API and more.
+Fitness App Using React.js, TailwindCSS, Rapid API and more.
 
 Demo: https://fitness-gym-app.netlify.app/
 
@@ -10,7 +10,7 @@ Demo: https://fitness-gym-app.netlify.app/
 
 ## Tech Stack used: 
 - React.js
-- Bootstrap
+- Tailwind CSS
 - Rapid API
 
 
