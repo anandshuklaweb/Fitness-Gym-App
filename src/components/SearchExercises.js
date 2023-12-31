@@ -71,9 +71,9 @@ const SearchExercises = ({ setExercises, bodyPart, setBodyPart }) => {
         </div>
       </section>
 
-      <div className=" body-parts-scroll">
-        <div className="relative w-full py-5 px-3" >
-          <HorizontalScrollbar
+      <div className="w-full">
+        <div className="relative py-5 px-3 md:px-12" >
+          <HorizontalScrollbar className="gap-4"
             data={bodyParts}
             bodyParts
             setBodyPart={setBodyPart}
