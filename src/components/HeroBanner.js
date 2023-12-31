@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const HeroBanner = () => {
   return (
@@ -18,9 +17,9 @@ const HeroBanner = () => {
             <h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Fitness App </h1>
             <p className="mt-6 text-lg leading-8 text-gray-600">is the best fitness app because of its large workout library and easy-to-use tools.</p>
             <div className="mt-10 flex items-center justify-center gap-x-6">
-              <Link to="/" className="z-10 rounded-md cursor-pointer bg-teal-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-500 no-underline ">
+              <a href="#search-exercise" className="z-10 rounded-md cursor-pointer bg-teal-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-teal-500 no-underline ">
                 Get started
-              </Link>
+              </a>
             </div>
           </div>
         </div>
