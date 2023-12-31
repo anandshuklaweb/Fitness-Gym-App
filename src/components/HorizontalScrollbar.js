@@ -10,7 +10,7 @@ const LeftArrow = () => {
   const { scrollPrev } = useContext(VisibilityContext);
 
   return (
-    <Typography onClick={() => scrollPrev()} className="right-arrow">
+    <Typography onClick={() => scrollPrev()} className="right-arrow mb-3 md:mb-0">
       <img src={LeftArrowIcon} alt="right-arrow" />
     </Typography>
   );
@@ -20,7 +20,7 @@ const RightArrow = () => {
   const { scrollNext } = useContext(VisibilityContext);
 
   return (
-    <Typography onClick={() => scrollNext()} className="left-arrow">
+    <Typography onClick={() => scrollNext()} className="left-arrow ">
       <img src={RightArrowIcon} alt="right-arrow" />
     </Typography>
   );
@@ -29,11 +29,11 @@ const RightArrow = () => {
 const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => (
   <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow}>
     {data.map((item) => (
-      <Box
+      <div
         key={item.id || item}
         itemId={item.id || item}
         title={item.id || item}
-        // m="0 10px"
+        m="0 10px"
       >
         {bodyParts ? (
           <BodyPart item={item} setBodyPart={setBodyPart} bodyPart={bodyPart} />
@@ -41,7 +41,7 @@ const HorizontalScrollbar = ({ data, bodyParts, setBodyPart, bodyPart }) => (
           //<ExerciseCard exercise={item} />
           console.log("test")
         )}
-      </Box>
+      </div>
     ))}
   </ScrollMenu>
 );

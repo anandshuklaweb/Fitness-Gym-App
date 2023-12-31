@@ -4,7 +4,7 @@ import Icon from "../assets/icons/gym.png";
 const BodyPart = ({ item, setBodyPart }) => (
   <>
     <div 
-      className="max-w-[310px] w-[250px] mx-2 border-2 border-l-4 border-b-4 hover:bg-gray-100 border-teal-400 rounded-sm cursor-pointer"
+      className="max-w-[310px] w-[290px] mx-2 border-2 border-l-4 border-b-4 hover:bg-gray-100 border-teal-400 rounded-sm cursor-pointer"
       onClick={() => {
         setBodyPart(item);
         window.scrollTo({ top: 1800, left: 100, behavior: "smooth" });
